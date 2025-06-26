@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Mon CV</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5ecd7;
+            color: #222;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            margin-bottom: 0.2em;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 1em;
+            margin-bottom: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #007BFF !important;
+            font-weight: bold;
+            padding: 4px 10px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        nav a:hover {
+            background: #e6f0ff;
+        }
+        section {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #0001;
+            margin-bottom: 2em;
+            padding: 2em 1.5em;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h2 {
+            margin-top: 0;
+        }
+        h3 {
+            margin-top: 0.7em;
+            margin-bottom: 0.5em;
+        }
+        h4 {
+            margin-bottom: 0.5em;
+            margin-top: 1.2em;
+        }
+        ul {
+            margin: 5px 0;
+        }
+        /* Page de garde */
+        .cv-flex {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2em;
+        }
+        .cv-left {
+            flex: 1 1 220px;
+            min-width: 220px;
+            background: #f5f7fa;
+            border-radius: 10px;
+            padding: 1.5em 1em;
+            color: #222;
+            font-size: 0.98em;
+        }
+        .cv-left h3 {
+            margin-top: 1.2em;
+        }
+        .cv-left ul {
+            margin: 0 0 1em 0;
+            padding-left: 1em;
+        }
+        .cv-left li {
+            margin-bottom: 0.3em;
+        }
+        .cv-right {
+            flex: 2 1 350px;
+            min-width: 280px;
+        }
+        .cv-right h2 {
+            margin-top: 0;
+        }
+        .cv-right h3 {
+            margin-top: 0.7em;
+            margin-bottom: 0.5em;
+        }
+        .cv-right h4 {
+            margin-bottom: 0.5em;
+            margin-top: 1.2em;
+        }
+        .cv-right ul {
+            margin-top: 0;
+            margin-bottom: 1em;
+            padding-left: 1.2em;
+        }
+        .cv-right li {
+            margin-bottom: 0.3em;
+        }
+        @media (max-width: 900px) {
+            .cv-flex { flex-direction: column; }
+            .cv-left, .cv-right { min-width: 0; }
+        }
+        h1, h2, h3, h4, nav a, .cv-left h3, .cv-right h3, .cv-right h4, section, p, ul, li, a, footer, header {
+            color: #222 !important;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Yvann BAILLARD</h1>
+    <nav>
+      <ul>
+        <li><a href="#" data-section="profil">Accueil</a></li>
+        <li><a href="#" data-section="cv">CV</a></li>
+        <li><a href="#" data-section="experience">Expérience</a></li>
+        <li><a href="#" data-section="education">Éducation</a></li>
+        <li><a href="#" data-section="competences">Compétences</a></li>
+        <li><a href="#" data-section="loisirs">Loisirs</a></li>
+        <li><a href="#" data-section="resume">Résumé</a></li>
+      </ul>
+    </nav>
+</header>
+
+<section id="profil">
+  <div style="text-align:center; padding:2em 1em;">
+    <h2>Bienvenue sur mon portfolio !</h2>
+    <p style="font-size:1.2em; max-width:600px; margin:1em auto;">Je m'appelle BAILLARD Yvann, étudiant en Bachelor Universitaire Technologique, passionné par l'informatique, le sport, la musique, les films et séries. Découvrez mon parcours, mes compétences et mes expériences !</p>
+  </div>
+</section>
+
+<section id="cv" style="display:none;">
+  <div class="cv-flex">
+    <!-- Colonne gauche -->
+    <aside class="cv-left">
+      <h3>Langues</h3>
+      <ul>
+        <li>Espagnol : B2</li>
+        <li>Anglais : B1</li>
+      </ul>
+      <h3>Savoir-être</h3>
+      <ul>
+        <li>Adaptabilité, esprit d'équipe, organisation</li>
+        <li>Sérieux, dynamique, assidu, passionné, rigoureux, créatif</li>
+      </ul>
+      <h3>Centres d'intérêt</h3>
+      <ul>
+        <li>Le sport : football, basket, handball</li>
+        <li>Lecture, films, voyages, musique</li>
+      </ul>
+    </aside>
+    <!-- Colonne droite -->
+    <div class="cv-right">
+      <h2>Yvann BAILLARD - Technicien Informatique</h2>
+      <h3>Parcours et compétence</h3>
+      <h4>Diplômes et Formations</h4>
+      <ul>
+        <li><b>Bachelor Universitaire Informatique</b> (2024-2027) – Université des Antilles, Schoelcher</li>
+        <li><b>Baccalauréat STMG</b> (2024) – Lycée Lajetée, Le François</li>
+        <li><b>Certification Pix</b> (2023) – Lycée Lajetée, Le François</li>
+        <li><b>Brevet des collèges</b> (2020) – Collège de Trianon, Le François</li>
+      </ul>
+      <h4>Expériences</h4>
+      <ul>
+        <li>
+          <b>Stagiaire Développeur</b> (2025, Entreprise Xtralog)
+          <ul>
+            <li>Développement d'une application de gestion de dossier technique et gestion des données</li>
+          </ul>
+        </li>
+        <li>
+          <b>Assistant préparateur en pharmacie</b> (2021, Pharmacie Mongin, Le François)
+          <ul>
+            <li>Accueil des clients, analyse des ordonnances, gestion des stocks</li>
+          </ul>
+        </li>
+        <li>
+          <b>Assistant préparateur en pharmacie</b> (2020, Pharmacie Mongin, Le François)
+          <ul>
+            <li>Réception, rangement, préparation, commandes, classement</li>
+          </ul>
+        </li>
+      </ul>
+      <h4>Compétences</h4>
+      <ul>
+        <li>Configuration de box, réseau LAN</li>
+        <li>Suite Office 365 (PowerPoint, Excel, Word)</li>
+        <li>Programmation Python</li>
+        <li>Assemblage et maintenance informatique</li>
+        <li>Gestion des données, sécurité (Certification Pix)</li>
+        <li>Programmation logicielle (Scratch)</li>
+        <li>Développement web (HTML, CSS)</li>
+        <li>Gestion de base de données SQL</li>
+        <li>Travail en équipe</li>
+        <li>Langages : HTML, CSS, JavaScript, Python, SQL</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="experience" style="display:none;">
+    <h2>Expérience Professionnelle</h2>
+    <ul>
+        <li><strong>Stagiaire Développeur</strong> - Entreprise Xtralog (2025 - 2025)</li>
+        <li><strong>Stagiaire préparateur en pharmacie </strong> - Entreprise Pharmacie MONGIN (2021 - 2021)</li>
+        <li><strong>Stagiaire préparateur en pharmacie </strong> - Entreprise Pharmacie MONGIN (2020 - 2020)</li>
+    </ul>
+</section>
+
+<section id="education" style="display:none;">
+    <h2>Éducation</h2>
+    <ul>
+        <li><strong>BUT Informatique</strong> - Université des Antilles (2024 - 2029)</li>
+        <li><strong>Lycée lajetée</strong> - Licence STMG (2021 - 2024)</li>
+        <li><strong>Collège Trianon</strong> - Voie générale (2017 - 2021)</li>
+    </ul>
+</section>
+
+<section id="competences" style="display:none;">
+    <h2>Compétences</h2>
+    <div style="display: flex; flex-direction: column; gap: 1em; align-items: flex-start;">
+        <a href="competence1.html" style="font-size:1em; padding:0.7em 1.2em; border-radius:6px; border:none; background:#888; color:#fff !important; cursor:pointer; text-decoration:none; transition:background 0.2s;">
+            <h3 style="margin:0; color:#fff !important;">Développer des applications informatiques simples : Réaliser un développement d'application</h3>
+        </a>
+        <a href="competence2.html" style="font-size:1em; padding:0.7em 1.2em; border-radius:6px; border:none; background:#888; color:#fff !important; cursor:pointer; text-decoration:none; transition:background 0.2s;">
+            <h3 style="margin:0; color:#fff !important;">Appréhender et construire des algorithmes : Optimiser des applications</h3>
+        </a>
+        <a href="competence3.html" style="font-size:1em; padding:0.7em 1.2em; border-radius:6px; border:none; background:#888; color:#fff !important; cursor:pointer; text-decoration:none; transition:background 0.2s;">
+            <h3 style="margin:0; color:#fff !important;">Installer et configurer un poste de travail : administrer des systèmes informatiques communicants complexes</h3>
+        </a>
+        <a href="competence4.html" style="font-size:1em; padding:0.7em 1.2em; border-radius:6px; border:none; background:#888; color:#fff !important; cursor:pointer; text-decoration:none; transition:background 0.2s;">
+            <h3 style="margin:0; color:#fff !important;">Concevoir et mettre en place une base de données à partir d'un cahier des charges client : Gérer des données de l'information</h3>
+        </a>
+        <a href="competence5.html" style="font-size:1em; padding:0.7em 1.2em; border-radius:6px; border:none; background:#888; color:#fff !important; cursor:pointer; text-decoration:none; transition:background 0.2s;">
+            <h3 style="margin:0; color:#fff !important;">Identifier les besoins métiers des clients et des utilisateurs : Conduire un projet</h3>
+        </a>
+        <a href="competence6.html" style="font-size:1em; padding:0.7em 1.2em; border-radius:6px; border:none; background:#888; color:#fff !important; cursor:pointer; text-decoration:none; transition:background 0.2s;">
+            <h3 style="margin:0; color:#fff !important;">Identifier ses aptitudes pour travailler dans une équipe : Collaborer au sein d'une équipe informatique</h3>
+        </a>
+    </div>
+</section>
+
+<section id="loisirs" style="display:none;">
+    <h2>Loisirs</h2>
+    <div style="display: flex; flex-wrap: wrap; gap: 2em; justify-content: center; align-items: flex-start;">
+        <div style="background: #f5f7fa; border-radius: 10px; padding: 1em; width: 220px; text-align: center; box-shadow: 0 0 8px #0001;">
+            <img src="https://images.unsplash.com/photo-1508609349937-5ec4ae374ebf?auto=format&fit=crop&w=400&q=80" alt="Football" style="width:100%; border-radius:8px; margin-bottom:0.7em;">
+            <h3 style="margin:0.3em 0 0.5em 0;">Football</h3>
+            <p style="font-size:0.98em;">Le football m'apprend l'esprit d'équipe, la persévérance et le plaisir du jeu collectif.</p>
+        </div>
+        <div style="background: #f5f7fa; border-radius: 10px; padding: 1em; width: 220px; text-align: center; box-shadow: 0 0 8px #0001;">
+            <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=400&q=80" alt="Musique" style="width:100%; border-radius:8px; margin-bottom:0.7em;">
+            <h3 style="margin:0.3em 0 0.5em 0;">Musique</h3>
+            <p style="font-size:0.98em;">La musique m'accompagne au quotidien, elle m'aide à me concentrer et à me détendre.</p>
+        </div>
+        <div style="background: #f5f7fa; border-radius: 10px; padding: 1em; width: 220px; text-align: center; box-shadow: 0 0 8px #0001;">
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80" alt="Informatique" style="width:100%; border-radius:8px; margin-bottom:0.7em;">
+            <h3 style="margin:0.3em 0 0.5em 0;">Informatique</h3>
+            <p style="font-size:0.98em;">L'informatique est une passion qui me pousse à apprendre, créer et résoudre des problèmes.</p>
+        </div>
+        <div style="background: #f5f7fa; border-radius: 10px; padding: 1em; width: 220px; text-align: center; box-shadow: 0 0 8px #0001;">
+            <img src="https://img.icons8.com/ios-filled/100/FF0000/play--v1.png" alt="Films et séries" style="width:60px; height:60px; margin-top:1em; margin-bottom:0.7em; object-fit:contain;">
+            <h3 style="margin:1.5em 0 0.5em 0;">Films et séries</h3>
+            <p style="font-size:0.98em;">J'aime voyager et m'évader à travers les films et séries, sources d'inspiration et de détente, j'en regarde assez régulièrement dès que j'ai un moment de libre.</p>
+        </div>
+    </div>
+</section>
+
+<section id="resume" style="display:none; background:#fff; border-radius:10px; box-shadow:0 2px 8px #0001; max-width:900px; margin:2em auto; padding:2em 1.5em;">
+  <h2 style="text-align:center;"> En Résumé</h2>
+  <p style="font-size:1.1em; line-height:1.7;">
+    Je suis passionné par divers domaines allant des sports aux technologies de pointe. Ayant pratiqué le football, j'ai développé une grande discipline et une capacité à gérer le stress. La musique m'a permis d'exprimer ma créativité et de renforcer ma confiance en moi.<br><br>
+    Les jeux vidéo me permettent de stimuler ma réflexion et ma créativité, tandis que mon intérêt pour l'informatique englobe la programmation, la cybersécurité et l'intelligence artificielle. Ces technologies représentent pour moi des outils puissants pour innover et résoudre des problèmes complexes.<br><br>
+    En parallèle, je suis un grand amateur de films, de séries et de dessins animés, des médias qui m'offrent une échappatoire fascinante et enrichissante. Cette diversité de passions m'aide à équilibrer ma vie et à m'épanouir tant personnellement que professionnellement.<br><br>
+    Merci de visiter mon site et de prendre le temps de découvrir mon univers !
+  </p>
+</section>
+
+<footer style="text-align:center; margin-top:2em; color:#888;">
+    <div style="font-size:1.1em; color:#222; margin-bottom:1em;">
+        <div>E-mail : yvannbaillard@gmail.com</div>
+        <div>Téléphone : 0696 09 22 12</div>
+    </div>
+    <p>&copy; 2025 Yvann BAILLARD</p>
+</footer>
+
+<script>
+  document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      document.querySelectorAll('section').forEach(sec => sec.style.display = 'none');
+      const section = link.getAttribute('data-section');
+      document.getElementById(section).style.display = '';
+    });
+  });
+</script>
+
+</body>
+</html>
